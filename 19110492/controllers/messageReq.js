@@ -23,6 +23,7 @@ function messageGetReq(req, resp) {
             resp.write(`<html><body><ul><li>${student.name}</li></ul></body></html>`);
         }
     }
+    resp.end();
 }
 
 module.exports = {
